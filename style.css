@@ -1,0 +1,61 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(computer.jpeg) no-repeat center center fixed; /*efter () är det som gör att bilden blir responsiv*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;         /*fyller/centrerar bilden på sidan*/
+}
+
+h1{
+  font-size: 3rem;      /*gör storleken 3 gånger större än h1*/
+  color: #9c8181;
+}
+
+/*mellanrum mellan Header och Section*/
+.buffer{
+  height: 13rem;
+}
+
+/*alltid ta med border-xxx för hr*/
+hr{
+  border-color: rgb(168, 111, 111);     /*färg på hr-linjen*/
+  border-width: 3px;                      /*gör linjen fetare*/ 
+  
+  /*göra linjen kortare på två sätt*/
+  /*width: 80pt;*/
+  max-width: 80px;
+}
+
+/* button har tre class-values, såhär modifierar vi dem*/
+/*.btn = generell modifiering för button och properties behöver ej upprepas*/
+.btn{
+  font-weight: 700;           /*gör texten fetare*/    
+  border-radius: 300px;        /*böjer på hörnen*/
+  text-transform: uppercase;  /*ger stora bokstäver*/
+}
+
+/*.btn-primary = modifierar färgen på button, text och border*/
+.btn-primary{
+  background-color: black;
+  border: 3px solid rgb(168, 111, 111);
+  color: rgb(99, 58, 58);
+}
+
+/*.btn-primary:hover = samma som ovan fast vad den skall visa vid hoover*/
+.btn-primary:hover{
+  background-color: rgb(168, 111, 111);
+  border-color: rgb(168, 111, 111);
+  color: rgb(99, 58, 58);
+  /*border-width: 5px;          /*gör button större vid hover*/
+}
+
+/*.btn-xl = modifierar storleken till större på button, därav namnet xl(större)*/
+.btn-xl{
+  padding: 1rem 2rem;         /*1rem(top/bottom) 2rem(left/right) = gör padding 1 och 2 gånger större storleken än vad det redan är*/
+}
+
+
