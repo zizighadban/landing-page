@@ -2,49 +2,23 @@
 <html>
   <head>
     <title>Landing Page</title>
-
-    <!-- Required meta tags -->
-    <!-- Visar "åäö" på webbplatsen-->
     <meta charset="utf-8">
-    <!-- Denna säger att sidan ska kunna zoomas, touchas, scrollas etc på mobila enheter. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!--Bootstrap länk-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!--Egen CSS länk-->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-
   <body>
-    <!--CSS från Bootstrap nedan genom class=""-->
-    <!--Skriv den CSS ändring du vill göra genom sökfältet i Bootstrap. Exempelvis "button", "text", "color" etc för syntaxen-->
-    <!--Vill man ha samma design från Bootstrap CSS men ändå justera lite på den så kan man komma åt denna genom sin egna CSS fil där man kommer åt class="btn btn-primary"(HTML) genom .btn{} eller .btn-primary{}(CSS). Just därför är det viktigt att den egna CSS länken är nedanför Bootstraps CSS länk i <head> så att den overwrite -->
-
-    <!--Viktigt att ha div-container, speciellt när man ska fixa layouten-->
-    <!--Bara av att lägga en div-container gjorde så att alla elementen hamnade i en container och inte utspridda överallt-->
-    <!--Vi centrerar elementen genom Flex. Vi enable flex genom att skriva d-flex tillsammans med container. Scrolla igenom Flex för att hitta den plats du vill justerna elementen. Vi vill centrera så lägg till align-items-center bredvid d-flex. För att detta ska fungera så måste man även lägga till h-100 för att göra height 100(full). På så sätt centrerar den i mitten av top/bottom-->
     <div class="container d-flex align-items-center h-100 ">
-      <!--Nu lägger vi en div-row för att lägga alla element i en rad i mitten-->
       <div class="row">
-        <!-- Vi gör en Header för h1 och centrerar den. Vi lägger col-12 i både Header och Section för att dessa ska hamna linjärt under varandra-->
         <header class="text-center col-12">
-          <!-- Göra texten till UPPERCASE genom class="text-uppercase"-->
           <h1 class="text-uppercase col-12"><strong>The biggest startup event of the year</strong></h1>
         </header>
 
-        <!--Buffer menas med space mellan Header och Section-->
-        <!--Spacet görs i CSS-->
         <div class="buffer col-12"></div>
 
-        <!--Vi gör en Section för hr och button och centrerar den. Vi lägger col-12 i både Header och Section för att dessa ska hamna linjärt under varandra-->
         <section class="text-center col-12">
           <hr>
-          <!--Vi lägger tre class-values i button. En btn, en btn-primary och en btn-xl. Med dessa kan vi ändra designen genom .btn/.btn-primary/.btn-xl i CSS och modifiera rätt properties i rätt class. -->
-          <!--Mailchimp länken läggs in här och sedan <button> inkapslad i den-->
           <a href="https://mailchi.mp/749d54070d48/zizistartup">
             <button class="btn btn-primary btn-xl">Find out more</button>
           </a>
